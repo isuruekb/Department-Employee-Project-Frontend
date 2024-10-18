@@ -1,0 +1,149 @@
+
+.employee-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+.employee-header {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.data-table th {
+    background-color: #007bff; 
+    color: white;
+    text-transform: uppercase;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+@media screen and (max-width: 768px) {
+    .data-table, 
+    .data-table thead, 
+    .data-table tbody, 
+    .data-table th, 
+    .data-table td, 
+    .data-table tr {
+        display: block;
+    }
+
+    .data-table tr {
+        margin-bottom: 15px;
+    }
+
+    .data-table td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+
+    .data-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+
+.employee-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-field, 
+.select-field {
+    flex: 1 1 calc(50% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+.button-group {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.primary-button, 
+.secondary-button {
+    padding: 10px 20px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button {
+    background-color: #007bff; 
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #0069d9;
+}
+
+.secondary-button {
+    background-color: #6c757d;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: #5a6268;
+}
+
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.success-message {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.loading-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
